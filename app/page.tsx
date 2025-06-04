@@ -1,6 +1,7 @@
 "use client";
-import { Drinks } from "./components/ui/acernity/drinks";
-import { Munchies } from "./components/ui/acernity/munchies";
+import { Desserts } from "./containers/desserts";
+import { Drinks } from "./containers/drinks";
+import { Munchies } from "./containers/munchies";
 import CarouselContainer from "./containers/CarouselContainer";
 import CTA from "./containers/cta";
 import Footer from "./containers/Footer";
@@ -16,6 +17,8 @@ export default function Home() {
       <Munchies />
       <Drinks />
       <CTA />
+      <Desserts />
+
       <Testimonials />
       <Footer />
     </div>

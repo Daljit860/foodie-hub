@@ -7,7 +7,7 @@ const CTA = () => {
         <section className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] xl:h-screen overflow-hidden">
             {/* Background Image */}
             <Image
-                src="/images/cta.png"
+                src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Delicious food"
                 fill
                 className="object-cover z-0"
@@ -26,9 +26,9 @@ const CTA = () => {
                 <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-white mb-5 sm:mb-6 max-w-[90%] md:max-w-[70%]">
                     One Bite And You Can Feel The Heaven In Your Mouth.
                 </p>
-                <button className="px-5 sm:px-6 py-2 sm:py-3 bg-white text-black font-semibold rounded-md hover:bg-orange-600 hover:text-black transition-all text-sm sm:text-base">
+                {/* <button className="px-5 sm:px-6 py-2 sm:py-3 bg-white text-black font-semibold rounded-md hover:bg-orange-600 hover:text-black transition-all text-sm sm:text-base">
                     SHOP NOW
-                </button>
+                </button> */}
             </div>
         </section>
     );

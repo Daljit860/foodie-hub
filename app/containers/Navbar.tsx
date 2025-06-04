@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-
+import { useCart } from "@/context/CartContext";
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [location, setLocation] = useState("Fetching location...");
@@ -49,6 +49,7 @@ const Navbar: React.FC = () => {
     }
   };
 
+  const { cart } = useCart();
   return (
     <header className="w-full shadow-md bg-black fixed z-50 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
@@ -71,7 +72,15 @@ const Navbar: React.FC = () => {
           <div>
             📞 Call us at <span className="font-semibold text-orange-600">0123456789</span>
           </div>
-          <Link href="/cart" className="hover:text-orange-600">Cart</Link>
+          <Link href="/cart" className="relative hover:text-orange-600">
+            Cart
+            {cart.length > 0 && (
+              <span className="absolute -top-2 -right-3 bg-orange-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+                {cart.reduce((acc, item) => acc + item.quantity, 0)}
+              </span>
+            )}
+          </Link>
+          {/* <Link href="/cart" className="hover:text-orange-600">Cart</Link> */}
           <Link href="/signin" className="hover:text-orange-600">My Profile</Link>
         </nav>
 
