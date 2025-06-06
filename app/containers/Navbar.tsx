@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
             )}
           </Link>
           {/* <Link href="/cart" className="hover:text-orange-600">Cart</Link> */}
-          <Link href="/signin" className="hover:text-orange-600">My Profile</Link>
+          {/* <Link href="/signin" className="hover:text-orange-600">My Profile</Link> */}
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -102,7 +102,7 @@ const Navbar: React.FC = () => {
           </div>
           <Link href="/cart" className="block hover:text-orange-600">Cart</Link>
 
-          <Link href="/signin" className="block hover:text-orange-600">My Profile</Link>
+          {/* <Link href="/signin" className="block hover:text-orange-600">My Profile</Link> */}
         </div>
       </div>
     </header>
